@@ -12,7 +12,7 @@ const CreateEvent: React.FC<CreateEventProps> = ({ onClose }) => {
   
   return (
     <>
-      <div className="lg:grid grid-cols-2 lg:h-[70vh] h-[100vh] lg:w-[700px] overflow-y-scroll">
+      <div className="lg:grid grid-cols-2 lg:h-[70vh] h-[90vh] lg:w-[700px] overflow-y-scroll">
         <div className=" bg-[#F9FAFB] layout-padd p-3">
           <h1 className="font-bold text-1xl text-black">Header</h1>
           <p className="font-normal text-sm text-gray-700">
@@ -92,7 +92,7 @@ const CreateEvent: React.FC<CreateEventProps> = ({ onClose }) => {
 
         <div className="div">
           <div className="flex space-x-3 ml-5">
-            <p className="bg-gray-500 text-sm text-black p-3 rounded-lg">
+            <p className="bg-gray-500 text-sm text-black p-3 rounded-lg" onClick={handleClose}>
               Label
             </p>
             <p className="p-3 text-[#374151] text-sm">Label</p>
