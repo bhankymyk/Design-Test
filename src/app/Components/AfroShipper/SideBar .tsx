@@ -5,12 +5,8 @@ import Image from "next/image";
 const SideBar = () => {
   const [open, setOpen] = useState(true);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  
-  
 
   const Menus = [
-    { title: "Home", src: "Home" },
-    { title: "User Management", src: "user-02", Dropdown: ["Users", "Employees", "Drivers", "Influencers"] },
     { title: "Organization", src: "organization", gap: true },
     { title: "Vehicles", src: "truck-01" },
     { title: "Shipment", src: "shopping-bag-03", sc: "chevron-down" },
@@ -27,18 +23,10 @@ const SideBar = () => {
     { title: "Settings", src: "settings-02" },
   ];
 
-
   const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+    setIsDropdownOpen((prevState) => !prevState);
   };
 
-  const handleSubmenuClick = (event: React.MouseEvent) => {
-    // Prevent event propagation to parent elements
-    event.stopPropagation();
-
-
-    
-  };
   return (
     <div className="flex">
       <div
@@ -62,15 +50,111 @@ const SideBar = () => {
               open && "rotate-[360deg]"
             }`}
           />
-          <h1
-            className={`text-white origin-left font-medium text-xl duration-200 ${
-              !open && "scale-0"
-            }`}
-          >
-          
-          </h1>
         </div>
-        <ul className="pt-6">
+
+        <div className="flex pt-6">
+          <Image
+            src="/assets/Home.svg"
+            alt=""
+            width={20}
+            height={20}
+            className="ml-2"
+          />
+          <p
+            className={`${
+              !open && "hidden"
+            } origin-left duration-200 text-white  ml-4`}
+          >
+            Home
+          </p>
+        </div>
+
+        <div className="ml-[-10px] mt-[5px]">
+          <button
+            id="dropdownDefaultButton"
+            data-dropdown-toggle="dropdown"
+            className={`${
+              !open && ""
+            } relative text-white  hover:bg-yellow-800  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800`}
+            type="button"
+            onClick={toggleDropdown}
+          >
+            <div className="flex">
+              <Image
+                src="/assets/user-02.svg"
+                alt=""
+                width={20}
+                height={20}
+                className="mr-3"
+              />
+              <h3 className={`${!open && "hidden"} `}>User Mangement</h3>
+            </div>
+            <svg
+              className={`${
+                !open && "hidden"
+              }w-2.5 h-2.5 ms-3 text-yellow-800 ml-10} `}
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+          </button>
+
+          <div
+            id="dropdown"
+            className={`absolute ${
+              isDropdownOpen ? "" : "hidden"
+            } bg-[#0B0E54] divide-y divide-gray-100 rounded-lg shadow w-44 `}
+          >
+            <ul
+              className={`${!open && "hidden"} py-2 text-sm text-white `}
+              aria-labelledby="dropdownDefaultButton"
+            >
+              <li>
+                <a
+                  href="#"
+                  className="block px-4 py-2 hover:bg-yellow-800 rounded-lg"
+                >
+                  User
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block px-4 py-2 hover:bg-yellow-800 rounded-lg"
+                >
+                  Employee
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block px-4 py-2 hover:bg-yellow-800 rounded-lg"
+                >
+                  Drivers
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block px-4 py-2 hover:bg-yellow-800 rounded-lg"
+                >
+                  Influencer
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul className="">
           {Menus.map((Menu, index) => (
             <li
               key={index}
@@ -86,57 +170,9 @@ const SideBar = () => {
               <span className={`${!open && "hidden"} origin-left duration-200`}>
                 {Menu.title}
               </span>
-           {/* here dropdown*/}
-           {Menu.Dropdown && (
-            <div className="relative">
-
-    <div onClick={toggleDropdown}>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        {/*  my seond Chevron icon */}
-
-        {isDropdownOpen ? (
-                    <path
-                      fillRule="evenodd"
-                      d="M10 3a1 1 0 0 0-1.707-.707l-6 6a1 1 0 0 0 1.414 1.414L10 5.414l5.293 5.293a1 1 0 1 0 1.414-1.414l-6-6A1 1 0 0 0 10 3z"
-                      clipRule="evenodd"
-                      />
-                    ) : (
-                      <path
-                      fillRule="evenodd"
-                      d="M10 17a1 1 0 0 1-1-1V7.414l-5.293 5.293a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 1 1-1.414 1.414L11 7.414V16a1 1 0 0 1-1 1z"
-                      clipRule="evenodd"
-                      />
-                    )}
-      </svg>
-      </div>
-    </div>
-  )}
-  {Menu.Dropdown && isDropdownOpen && (
-    <ul className="absolute  left-3 bg-blue-500 shadow-lg py-2 mt-1" onClick={handleSubmenuClick}>
-      {Menu.Dropdown.map((item, subIndex) => (
-        <li
-          key={subIndex}
-          className="px-4 py-2 cursor-pointer hover:bg-gray-100"
-        >
-          {item}
-        </li>
-      ))}
-    </ul>
-  )} 
-
-{/* toggle ends here */}
-
-
-
             </li>
           ))}
         </ul>
-
         <div className="div">
           <ul className="">
             <p className={`text-sm text-gray-500 mt-10 ${!open && "hidden"}`}>

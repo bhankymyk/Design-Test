@@ -10,6 +10,8 @@ export default function EventSection() {
 
   const handleOpen = () => setOpen(!open);
 
+  // const handleCloseSelection = () => setOpenSelection(false);
+
   return (
     <>
       <div className="flex">
