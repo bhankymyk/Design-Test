@@ -10,6 +10,8 @@ export default function EventSection() {
 
   const handleOpen = () => setOpen(!open);
 
+  
+
   // const handleCloseSelection = () => setOpenSelection(false);
 
   return (
@@ -132,7 +134,7 @@ export default function EventSection() {
           onPointerEnterCapture={undefined}
           onPointerLeaveCapture={undefined}
         >
-          <CreateEvent />
+          <CreateEvent  onClose={handleOpen} />
         </DialogBody>
       </Dialog>
     </>

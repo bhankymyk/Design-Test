@@ -1,7 +1,15 @@
 import React from "react";
 import Image from "next/image";
 
-export default function CreateEvent() {
+type CreateEventProps = {
+  onClose: () => void;
+};
+
+const CreateEvent: React.FC<CreateEventProps> = ({ onClose }) => {
+  const handleClose = () => {
+    onClose(); 
+  };
+  
   return (
     <>
       <div className="lg:grid grid-cols-2 lg:h-[70vh] h-[100vh] lg:w-[700px] overflow-y-scroll">
@@ -103,7 +111,8 @@ export default function CreateEvent() {
 
           <div className="flex justify-end mt-10">
             <div className="flex ">
-              <button className=" text-black font-medium py-1 px-4 flex items-center rounded ">
+              <button className=" text-black font-medium py-1 px-4 flex items-center rounded"
+              onClick={handleClose} >
                 Cancel
               </button>
             </div>
@@ -118,3 +127,5 @@ export default function CreateEvent() {
     </>
   );
 }
+
+export default CreateEvent;

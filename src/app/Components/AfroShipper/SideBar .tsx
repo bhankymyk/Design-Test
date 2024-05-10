@@ -65,7 +65,7 @@ const SideBar = () => {
               !open && "hidden"
             } origin-left duration-200 text-white  ml-4`}
           >
-            Home
+            <h3 className="text-sm">Home</h3>
           </p>
         </div>
 
@@ -87,7 +87,7 @@ const SideBar = () => {
                 height={20}
                 className="mr-3"
               />
-              <h3 className={`${!open && "hidden"} `}>User Mangement</h3>
+              <h3 className={`${!open && "hidden"} text-sm`}>User Mangement</h3>
             </div>
             <svg
               className={`${
