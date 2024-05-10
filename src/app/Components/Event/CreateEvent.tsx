@@ -93,7 +93,7 @@ export default function CreateEvent() {
 
           <div className="ml-5 mt-10">
             <Image
-              src="/assets/illustration.png"
+              src="/assets/Illustration.png"
               width={400}
               height={80}
               alt="bg"

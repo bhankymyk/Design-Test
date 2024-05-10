@@ -16,34 +16,34 @@ export default function hero() {
           src="/assets/image 104.png"
           alt=""
           height={200}
-          width={800}
+          width={400}
           className="w-full"
         />
-        <div className="lg:absolute top-0 right-10 mt-5">
-          <p className="font-normal text-[18px] mt-5">
-            Wednesday 17 August, 2022
+        <div className="lg:absolute lg:top-0 lg:right-10 lg:mt-5 header">
+          <p className="font-normal lg:text-[18px] lg:mt-5">
+            Wednesday 17 August, 20224
           </p>
-          <h3 className="font-bold text-[32px] mt-3">
+          <h3 className="font-bold lg:text-[32px] lg:mt-3">
             Using Riverside.fm With Cal.com
           </h3>
-          <p className="font-normal text-[18px] mt-3 leading-8">
-            How Cal.com can be used with Riverside.fm to create and
-            <br /> host podcasts wherever you are.
+          <p className="font-normal lg:text-[18px] lg:mt-3 lg:leading-8">
+            How Cal.com can be used with Riverside.fm <br/>to create and
+             host podcasts wherever you are.
           </p>
-          <div className="flex mt-3">
+          <div className="flex lg:mt-3">
             <Image
               src="/assets/image 99.png"
               alt=""
               width={30}
               height={30}
-              className="mr-5"
+              className="lg:mr-5"
             />
-            <p className="text-[18px]">Assantewa Heubi</p>
+            <p className="lg:text-[18px] pic">Assantewa Heubi</p>
           </div>
         </div>
       </div>
       <div className="div mt-10">
-        <h2 className="font-bold lg:text-[60px] leading-[60px] ">
+        <h2 className="font-bold lg:text-[60px] text-3xl leading-[60px] ">
           More Stories
         </h2>
       </div>

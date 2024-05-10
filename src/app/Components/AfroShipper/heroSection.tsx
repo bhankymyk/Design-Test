@@ -6,8 +6,8 @@ import Tables from "./Table";
 export default function heroSection() {
   return (
     <>
-      <div className="flex-col  layout-padding">
-        <div className="flex space-x-3 mt-10">
+      <div className="flex flex-col  layout-padding">
+        <div className="flex lg:space-x-3 mt-10">
           <Image
             src="/assets/Breadcrumb.svg"
             width={20}

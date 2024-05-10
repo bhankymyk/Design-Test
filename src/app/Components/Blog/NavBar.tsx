@@ -63,7 +63,7 @@ export default function App() {
           isOpen ? "block" : "hidden"
         }`}
       >
-        <ul className="text-sm lg:flex border border-gray-500 border-2 black p-3 rounded-3xl bg-white">
+        <ul className="text-sm lg:flex border border-gray-500 border-2 black p-3 rounded-3xl bg-white navb">
           {NavList.map(({ name, link }) => (
             <li key={name}>
               <Link
@@ -75,7 +75,7 @@ export default function App() {
             </li>
           ))}
         </ul>
-        <div className="flex ml-[7rem] ">
+        <div className="flex ml-[7rem] loginB">
           <div>
             <button 
             className="inline-flex items-center text-white text-base font-bold h-[51px] px-12  bg-black rounded-3xl border">

@@ -24,8 +24,8 @@ const SideBar = () => {
     <div className="flex">
       <div
         className={` ${
-          open ? "w-72" : "w-20 "
-        } bg-gray-100 h-screen p-5  pt-8 relative duration-300`}
+          open ? "w-[13rem]" : "w-20 "
+        } bg-gray-100 lg:h-screen h-[105vh] p-5  pt-8 relative duration-300`}
       >
         <img
           src="./assets/control.svg"
@@ -79,7 +79,7 @@ const SideBar = () => {
           ))}
         </ul>
 
-        <div className="fixed  bottom-0">
+        <div className="fixed  bottom-[0.5rem]">
           <ul className="">
             {Menus2.map((Menu, index) => (
               <li

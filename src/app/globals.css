@@ -19,4 +19,24 @@
   .footer {
     display: block;
   }
+  .header{
+    position: absolute;
+    top: 300px;
+    right: 17px;
+    line-height: 18px;
+  }
+  .header, p{
+    font-size: 8px;
+  }
+  .pic{
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .loginB{
+    position: absolute;
+    right: 50px;
+  }
+  .navb{
+    position: absolute;
+  }
 }

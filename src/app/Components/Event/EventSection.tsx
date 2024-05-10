@@ -47,7 +47,7 @@ export default function EventSection() {
 
               <div className="flex  bg-gray-500 w-[80px] ">
                 <Image
-                  src="/assets/clock.svg"
+                  src="/assets/Clock.svg"
                   width={20}
                   height={20}
                   alt=""
@@ -84,7 +84,7 @@ export default function EventSection() {
               <p>A longer chat to run through designs</p>
               <div className="flex  bg-gray-500 w-[80px] ">
                 <Image
-                  src="/assets/clock.svg"
+                  src="/assets/Clock.svg"
                   width={20}
                   height={20}
                   alt=""

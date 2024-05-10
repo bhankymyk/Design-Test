@@ -43,7 +43,7 @@ const SideBar = () => {
     <div className="flex">
       <div
         className={` ${
-          open ? "w-72" : "w-20 "
+          open ? "w-50" : "w-20 "
         } bg-[#0B0E54]  p-5  pt-8 relative duration-300`}
       >
         <img
