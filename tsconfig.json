@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/Components/Event/EventsSec.tsx", "src/app/Components/Event/EventsSec.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/Components/Event/EventSection.tsx", "src/app/Components/Event/EventSection.tsx"],
   "exclude": ["node_modules"]
 }

@@ -3,7 +3,6 @@ import Navbar from "@/app/Components/Blog/NavBar";
 import Hero from "./Components/Blog/SectionBlog";
 import Footer from "./Components/Blog/Footer";
 
-
 export default function page() {
   return (
     <>

@@ -1,11 +1,10 @@
-import React from 'react';
-import SessionLogs from '@/app/Components/AfroShipper/SessionLogs'
+import React from "react";
+import SessionLogs from "@/app/Components/AfroShipper/SessionLogs";
 
 export default function page() {
   return (
     <div>
-<SessionLogs/>
-
+      <SessionLogs />
     </div>
-  )
+  );
 }

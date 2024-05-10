@@ -7,7 +7,9 @@ export default function CreateEvent() {
       <div className="lg:grid grid-cols-2 w-[700px]">
         <div className=" bg-[#F9FAFB] layout-padd p-3">
           <h1 className="font-bold text-1xl text-black">Header</h1>
-          <p className="font-normal text-sm text-gray-700">Optional Description</p>
+          <p className="font-normal text-sm text-gray-700">
+            Optional Description
+          </p>
           <div className="div mt-3">
             <div className="div">
               <label className="text-black text-sm">Label</label>
@@ -17,7 +19,7 @@ export default function CreateEvent() {
                 type="text"
                 name=""
                 id=""
-                className="bg-white px-2 border-2 text-black rounded-lg placeholder-black text-sm  h-[36px] w-[300px] " 
+                className="bg-white px-2 border-2 text-black rounded-lg placeholder-black text-sm  h-[36px] w-[300px] "
                 placeholder="Filled"
               />
             </div>
@@ -82,7 +84,9 @@ export default function CreateEvent() {
 
         <div className="div">
           <div className="flex space-x-3 ml-5">
-            <p className="bg-gray-500 text-sm text-black p-3 rounded-lg">Label</p>
+            <p className="bg-gray-500 text-sm text-black p-3 rounded-lg">
+              Label
+            </p>
             <p className="p-3 text-[#374151] text-sm">Label</p>
             <p className="p-3 text-[#374151] text-sm">Label</p>
           </div>
