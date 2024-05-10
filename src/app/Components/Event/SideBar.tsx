@@ -52,7 +52,7 @@ const SideBar = () => {
           </h1>
 
           <Image
-            src="./assets/Search.svg"
+            src="./assets/search.svg"
             alt=""
             width={25}
             height={25}

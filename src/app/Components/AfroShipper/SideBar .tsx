@@ -44,7 +44,7 @@ const SideBar = () => {
       <div
         className={` ${
           open ? "w-50" : "w-20 "
-        } bg-[#0B0E54]  p-5  pt-8 relative duration-300`}
+        } bg-[#0B0E54]  lg:h-[130vh] h-[152vh] p-5  pt-8 relative duration-300`}
       >
         <img
           src="./assets/control.svg"

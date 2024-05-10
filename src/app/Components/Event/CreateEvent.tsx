@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function CreateEvent() {
   return (
     <>
-      <div className="lg:grid grid-cols-2 w-[700px]">
+      <div className="lg:grid grid-cols-2 lg:h-[70vh] h-[100vh] lg:w-[700px] overflow-y-scroll">
         <div className=" bg-[#F9FAFB] layout-padd p-3">
           <h1 className="font-bold text-1xl text-black">Header</h1>
           <p className="font-normal text-sm text-gray-700">
