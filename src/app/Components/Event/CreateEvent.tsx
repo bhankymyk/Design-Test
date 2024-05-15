@@ -12,14 +12,13 @@ const CreateEvent: React.FC<CreateEventProps> = ({ onClose }) => {
   
   return (
     <>
-      <div className="lg:grid grid-cols-2 lg:h-[70vh] h-[90vh] lg:w-[700px] ">
+      <div className="lg:grid grid-cols-2 lg:h-[70vh] h-[90vh] lg:w-[700px] overflow-y-scroll">
         <div className=" bg-[#F9FAFB] layout-padd p-3">
           <h1 className="font-semibold text-1xl text-black font-customFontHeading">Header</h1>
           <p className="font-normal text-sm text-gray-700">
             Optional Description
           </p>
-          <div className="flex lg:flex-col md:flex-row ">
-          <div className="div mt-3 mr-2">
+          <div className="div mt-3">
             <div className="div">
               <label className="text-[#101010] text-sm font-medium leading-4">Label</label>
             </div>
@@ -28,39 +27,7 @@ const CreateEvent: React.FC<CreateEventProps> = ({ onClose }) => {
                 type="text"
                 name=""
                 id=""
-                className="bg-white px-2 border-2 text-black rounded-lg placeholder-black text-sm  h-[36px] lg:w-[300px] leaading-4"
-                placeholder="Filled"
-              />
-            </div>
-          </div>
-
-          <div className="div mt-3">
-            <div className="div">
-              <label className="text-[#101010]  text-sm font-medium leading-4">Label</label>
-            </div>
-            <div className="div">
-              <input
-                type="text"
-                name=""
-                id=""
-                className="bg-white px-2 text-black rounded-lg placeholder-black text-sm  h-[36px] lg:w-[300px] leaading-4"
-                placeholder="Filled"
-              />
-            </div>
-          </div>
-          </div>
-
-          <div className="div flex lg:flex-col md:flex-row">
-          <div className="div mt-3 mr-2">
-            <div className="div">
-              <label className="text-[#101010]  text-sm font-medium leading-4">Label</label>
-            </div>
-            <div className="div">
-              <input
-                type="text"
-                name=""
-                id=""
-                className="bg-white px-2 text-black rounded-lg placeholder-black text-sm  h-[36px] lg:w-[300px] leaading-4"
+                className="bg-white px-2 border-2 text-black rounded-lg placeholder-black text-sm  h-[36px] w-[300px] leaading-4"
                 placeholder="Filled"
               />
             </div>
@@ -74,14 +41,11 @@ const CreateEvent: React.FC<CreateEventProps> = ({ onClose }) => {
                 type="text"
                 name=""
                 id=""
-                className="bg-white px-2 text-black rounded-lg placeholder-black text-sm  h-[36px] lg:w-[300px] leaading-4"
+                className="bg-white px-2 text-black rounded-lg placeholder-black text-sm  h-[36px] w-[300px] leaading-4"
                 placeholder="Filled"
               />
             </div>
           </div>
-          </div>
-
-
           <div className="div mt-3">
             <div className="div">
               <label className="text-[#101010]  text-sm font-medium leading-4">Label</label>
@@ -91,14 +55,42 @@ const CreateEvent: React.FC<CreateEventProps> = ({ onClose }) => {
                 type="text"
                 name=""
                 id=""
-                className="bg-white px-2 text-black rounded-lg placeholder-black text-sm  h-[36px] lg:w-[300px] leaading-4"
+                className="bg-white px-2 text-black rounded-lg placeholder-black text-sm  h-[36px] w-[300px] leaading-4"
+                placeholder="Filled"
+              />
+            </div>
+          </div>
+          <div className="div mt-3">
+            <div className="div">
+              <label className="text-[#101010]  text-sm font-medium leading-4">Label</label>
+            </div>
+            <div className="div">
+              <input
+                type="text"
+                name=""
+                id=""
+                className="bg-white px-2 text-black rounded-lg placeholder-black text-sm  h-[36px] w-[300px] leaading-4"
+                placeholder="Filled"
+              />
+            </div>
+          </div>
+          <div className="div mt-3">
+            <div className="div">
+              <label className="text-[#101010]  text-sm font-medium leading-4">Label</label>
+            </div>
+            <div className="div">
+              <input
+                type="text"
+                name=""
+                id=""
+                className="bg-white px-2 text-black rounded-lg placeholder-black text-sm  h-[36px] w-[300px] leaading-4"
                 placeholder="Filled"
               />
             </div>
           </div>
         </div>
 
-        <div className="div mt-5">
+        <div className="div">
           <div className="flex space-x-3 ml-5">
             <p className="bg-gray-500 text-sm text-black p-3 rounded-lg leaading-4 font-medium" onClick={handleClose}>
               Label

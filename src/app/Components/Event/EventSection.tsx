@@ -126,7 +126,7 @@ export default function EventSection() {
         <div className="absolute inset-0  z-5" onClick={handleOpen}></div>
         <DialogBody
           placeholder={""}
-          className="h-max-height bg-white rounded-xl py-5 lg:px-6 px-8"
+          className="h-max-height bg-white rounded-xl py-5 px-6"
           onPointerEnterCapture={undefined}
           onPointerLeaveCapture={undefined}
         >
