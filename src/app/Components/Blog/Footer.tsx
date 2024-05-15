@@ -7,9 +7,9 @@ export default function Footer() {
       <div className="bg-black border rounded-2xl mb-10">
         <div className="grid grid-cols-5 px-6 mb-5 footer">
           <div className="div mt-10 hidden sm:block">
-            <h1 className="font-bold text-3xl text-gray-200">Cal.com</h1>
+            <h1 className="font-bold text-3xl text-gray-200 font-customFontHeading">Cal.com</h1>
             <div className="div mt-10">
-              <p className="text-[15px] text-gray-200">
+              <p className="text-[15px] text-gray-200 font-customFont">
                 © {new Date().getFullYear()} Cal.com, Inc. All <br /> rights
                 reserved. Need Help? <br /> support@cal.com
               </p>
@@ -24,48 +24,48 @@ export default function Footer() {
 
           <div className="div mt-10">
             <ul className="space-y-4">
-              <li className="text-[18px] text-gray-200">SOLUTIONS</li>
-              <li className="text-[15px] text-gray-200">Self-Hosted</li>
-              <li className="text-[15px] text-gray-200">Saas Hosting</li>
-              <li className="text-[15px] text-gray-200">Infrastructure</li>
-              <li className="text-[15px] text-gray-200">Web3</li>
+              <li className="text-[18px] text-gray-200 font-customFont">SOLUTIONS</li>
+              <li className="text-[15px] text-gray-200 font-customFont">Self-Hosted</li>
+              <li className="text-[15px] text-gray-200 font-customFont">Saas Hosting</li>
+              <li className="text-[15px] text-gray-200 font-customFont">Infrastructure</li>
+              <li className="text-[15px] text-gray-200 font-customFont">Web3</li>
             </ul>
           </div>
 
           <div className="div mt-10">
             <ul className="space-y-4">
-              <li className="text-[18px] text-gray-200">DOCUMENTATION</li>
-              <li className="text-[15px] text-gray-200">Products</li>
-              <li className="text-[15px] text-gray-200">Developers</li>
-              <li className="text-[15px] text-gray-200">Public API</li>
-              <li className="text-[15px] text-gray-200">Docker</li>
+              <li className="text-[18px] text-gray-200 font-customFont">DOCUMENTATION</li>
+              <li className="text-[15px] text-gray-200 font-customFont">Products</li>
+              <li className="text-[15px] text-gray-200 font-customFont">Developers</li>
+              <li className="text-[15px] text-gray-200 font-customFont">Public API</li>
+              <li className="text-[15px] text-gray-200 font-customFont">Docker</li>
             </ul>
           </div>
 
           <div className="div mt-10">
             <ul className="space-y-4">
-              <li className="text-[18px] text-gray-200">RESOURCES</li>
-              <li className="text-[15px] text-gray-200">About</li>
-              <li className="text-[15px] text-gray-200">Blog</li>
-              <li className="text-[15px] text-gray-200">Merch Store</li>
-              <li className="text-[15px] text-gray-200">Open Store</li>
+              <li className="text-[18px] text-gray-200 font-customFont">RESOURCES</li>
+              <li className="text-[15px] text-gray-200 font-customFont">About</li>
+              <li className="text-[15px] text-gray-200 font-customFont">Blog</li>
+              <li className="text-[15px] text-gray-200 font-customFont">Merch Store</li>
+              <li className="text-[15px] text-gray-200 font-customFont">Open Store</li>
             </ul>
           </div>
 
           <div className="div mt-10">
             <ul className="space-y-4">
-              <li className="text-[18px] text-gray-200">LEGAL</li>
-              <li className="text-[15px] text-gray-200">Privacy</li>
-              <li className="text-[15px] text-gray-200">Terms</li>
-              <li className="text-[15px] text-gray-200">Licence</li>
-              <li className="text-[15px] text-gray-200">Security</li>
+              <li className="text-[18px] text-gray-200 font-customFont">LEGAL</li>
+              <li className="text-[15px] text-gray-200 font-customFont">Privacy</li>
+              <li className="text-[15px] text-gray-200 font-customFont">Terms</li>
+              <li className="text-[15px] text-gray-200 font-customFont">Licence</li>
+              <li className="text-[15px] text-gray-200 font-customFont">Security</li>
             </ul>
           </div>
 
           <div className="div mt-10 lg:hidden">
-            <h1 className="font-bold text-3xl text-gray-200">Cal.com</h1>
+            <h1 className="font-bold text-3xl text-gray-200 font-customFontHeading">Cal.com</h1>
             <div className="div mt-10">
-              <p className="text-[15px] text-gray-200">
+              <p className="text-[15px] text-gray-200 font-customFont">
                 © {new Date().getFullYear()} Cal.com, Inc. All <br /> rights
                 reserved. Need Help? <br /> support@cal.com
               </p>

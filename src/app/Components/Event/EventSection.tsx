@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Dialog, DialogBody } from "@/MTailwindExports";
 import CreateEvent from "@/app/Components/Event/CreateEvent";
-import SideBar from "./SideBar";
+// import SideBar from "./SideBar";
 import Image from "next/image";
 
 export default function EventSection() {
@@ -12,11 +12,11 @@ export default function EventSection() {
 
   return (
     <>
-      <div className="flex">
-        <SideBar />
+      {/* <div className="flex"> */}
+        {/* <SideBar /> */}
 
         <div className="flex flex-col layout-padding mt-5 w-full">
-          <h1 className="text-2xl font-semibold ">Event Types</h1>
+          <h1 className="text-2xl font-semibold font-customFontHeading">Event Types</h1>
 
           <div className="flex justify-between !md:flex-col">
             <div className=" mt-5">
@@ -32,7 +32,7 @@ export default function EventSection() {
                 onClick={handleOpen}
               >
                 <span className="text-lg">+</span>
-                <span className="text-sm">New</span>
+                <span className="text-sm  leading-7 font-medium">New</span>
               </button>
             </div>
           </div>
@@ -112,7 +112,7 @@ export default function EventSection() {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
 
       <Dialog
         open={open}
@@ -126,7 +126,7 @@ export default function EventSection() {
         <div className="absolute inset-0  z-5" onClick={handleOpen}></div>
         <DialogBody
           placeholder={""}
-          className="h-max-height bg-white rounded-xl py-5 px-6"
+          className="h-max-height bg-white rounded-xl py-5 lg:px-6 px-8"
           onPointerEnterCapture={undefined}
           onPointerLeaveCapture={undefined}
         >

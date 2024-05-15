@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 const SideBar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const Menus = [
     { title: "Event Types", src: "Event" },

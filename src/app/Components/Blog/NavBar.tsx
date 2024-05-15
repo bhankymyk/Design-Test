@@ -68,7 +68,7 @@ export default function App() {
             <li key={name}>
               <Link
                 href={link}
-                className={`block mt-4 lg:inline-block lg:mt-0 text-black font-bold mr-10 text-base  `}
+                className={`block mt-4 lg:inline-block lg:mt-0 text-black font-semibold mr-10 text-base font-customFont `}
               >
                 {name}
               </Link>
@@ -78,7 +78,7 @@ export default function App() {
         <div className="flex ml-[7rem] loginB">
           <div>
             <button 
-            className="inline-flex items-center text-white text-base font-bold h-[51px] px-12  bg-black rounded-3xl border">
+            className="inline-flex items-center text-white text-base font-bold h-[51px] px-12 bg-black rounded-3xl border font-customFont">
               <Link href='/afroShipper'>
 
               Login

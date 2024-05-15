@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 const SideBar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const Menus = [
@@ -32,7 +32,7 @@ const SideBar = () => {
       <div
         className={` ${
           open ? "w-50" : "w-20 "
-        } bg-[#0B0E54]  lg:h-[130vh] h-[152vh] p-5  pt-8 relative duration-300`}
+        } bg-[#0B0E54]  lg:h-[140vh] h-[152vh] p-5  pt-8 relative duration-300`}
       >
         <img
           src="./assets/control.svg"
@@ -60,13 +60,13 @@ const SideBar = () => {
             height={20}
             className="ml-2"
           />
-          <p
+          <div
             className={`${
               !open && "hidden"
             } origin-left duration-200 text-white  ml-4`}
           >
-            <h3 className="text-sm">Home</h3>
-          </p>
+            <h3 className="text-sm leading-7 font-semibold">Home</h3>
+          </div>
         </div>
 
         <div className="ml-[-10px] mt-[5px]">
@@ -87,7 +87,7 @@ const SideBar = () => {
                 height={20}
                 className="mr-3"
               />
-              <h3 className={`${!open && "hidden"} text-sm`}>User Mangement</h3>
+              <h3 className={`${!open && "hidden"} text-sm leading-7 font-semibold`}>User Mangement</h3>
             </div>
             <svg
               className={`${
@@ -167,7 +167,7 @@ const SideBar = () => {
                 width={20}
                 height={20}
               />
-              <span className={`${!open && "hidden"} origin-left duration-200`}>
+              <span className={`${!open && "hidden"} origin-left duration-200 text-sm leading-7 font-semibold`}>
                 {Menu.title}
               </span>
             </li>
@@ -192,7 +192,7 @@ const SideBar = () => {
                   height={20}
                 />
                 <span
-                  className={`${!open && "hidden"} origin-left duration-200`}
+                  className={`${!open && "hidden"} origin-left duration-200 text-sm leading-7 font-semibold`}
                 >
                   {Menu.title}
                 </span>

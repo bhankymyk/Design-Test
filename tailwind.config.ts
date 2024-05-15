@@ -9,6 +9,10 @@ const config: Config = withMT({
   ],
   theme: {
     extend: {
+      fontFamily: {
+        customFont: ["Matter TRIAL"],
+        customFontHeading: ["Cal Sans"]
+      },  
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -44,7 +44,7 @@ function Tables() {
               <td className="px-6 py-4">
                 <button
                   type="button"
-                  className="text-[#067647] bg-[#ABEFC6] font-semibold rounded-full text-[12px] px-2 py-2 text-center me-2 mb-2 "
+                  className="text-[#067647] bg-[#ABEFC6] font-semibold rounded-full text-[12px] px-2 py-2 text-center me-2 mb-2 leading-5 "
                 >
                   Active
                 </button>
@@ -63,7 +63,7 @@ function Tables() {
               <td className="px-6 py-4">
                 <button
                   type="button"
-                  className="text-[#067647] bg-[#ABEFC6] font-semibold rounded-full text-[12px] px-2 py-2 text-center me-2 mb-2 "
+                  className="text-[#067647] bg-[#ABEFC6] font-semibold rounded-full text-[12px] px-2 py-2 text-center me-2 mb-2 leading-5"
                 >
                   Active
                 </button>
@@ -82,7 +82,7 @@ function Tables() {
               <td className="px-6 py-4">
                 <button
                   type="button"
-                  className="text-[#B54708] bg-[#FEDF89] font-semibold rounded-full text-s px-2 py-2 text-center me-2 mb-2 "
+                  className="text-[#B54708] bg-[#FEDF89] font-semibold rounded-full text-s px-2 py-2 text-center me-2 mb-2 leading-5"
                 >
                   Expired
                 </button>
@@ -101,7 +101,7 @@ function Tables() {
               <td className="px-6 py-4">
                 <button
                   type="button"
-                  className="text-[#B42318] bg-[#FECDCA] font-semibold rounded-full text-s px-2 py-2 text-center me-2 mb-2 "
+                  className="text-[#B42318] bg-[#FECDCA] font-semibold rounded-full text-s px-2 py-2 text-center me-2 mb-2 leading-5"
                 >
                   Signed Out
                 </button>
@@ -120,7 +120,7 @@ function Tables() {
               <td className="px-6 py-4">
                 <button
                   type="button"
-                  className="text-[#B42318] bg-[#FECDCA] font-semibold rounded-full text-s px-2 py-2 text-center me-2 mb-2 "
+                  className="text-[#B42318] bg-[#FECDCA] font-semibold rounded-full text-s px-2 py-2 text-center me-2 mb-2 leading-5"
                 >
                   Signed Out
                 </button>
